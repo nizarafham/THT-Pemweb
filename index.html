@@ -3,122 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nizar's port</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Nizar's Port</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <nav>
+<body class="bg-gray-800 text-white font-sans">
 
-        <a href="#" class="navbar-brand">nizaru!</a>
-    
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#project">Project</a></li>
-
+    <nav class="flex justify-between items-center px-8 py-4 bg-black bg-opacity-80 fixed top-0 left-0 right-0 z-50 border-b border-brown-700">
+        <a href="#" class="text-xl font-bold text-white">nizaru!</a>
+        <ul class="flex space-x-6">
+            <li><a href="#home" class="text-white hover:underline">Home</a></li>
+            <li><a href="#project" class="text-white hover:underline">Project</a></li>
         </ul>
-      </nav>
+    </nav>
 
-      <div class="profile-container">
-        <div class="image-container">
-            <img src="foto.jpg" alt="zals" width="400">
+    <div class="flex flex-wrap items-center justify-between px-8 py-8 mt-20">
+        <div class="flex justify-center w-full md:w-1/2">
+            <img src="foto.jpg" alt="zals" class="rounded-full w-96">
         </div>
-        <div class="description-container" id="home">
-            <h1>NIZAR AFHAM AFLAHA</h1>
-            <p style="font-size:25px;">
+        <div class="mt-8 md:mt-0 md:ml-8 w-full md:w-1/2" id="home">
+            <h1 class="text-3xl font-bold">NIZAR AFHAM AFLAHA</h1>
+            <p class="text-lg mt-4">
                 Undergraduate Computer Science Student at Pertamina University <br>
                 with a strong interest in web and mobile app development.
             </p>
         </div>
     </div>
 
-    <div class="skill" align="center">
-        <h2>WHAT I LEARN</h2>
-        <div class="content1">
-            <ol>
-                <li><b>PHP</b></li>
-                <li><b>Flutter</b></li>
-            </ol>
-            <ul>
-                I am currently expanding my skills by learning Dart and improving my knowledge of Flutter <br>
-                for mobile development. Additionally, I am exploring backend technologies with Laravel <br>
-                to enhance my expertise in web development.
-            </ul>
-        </div>
-    </div>
-    <section class="project" id="project">
-        <div class="skill" >
-            <h2>PROJECT</h2>
-            <div class="content1">
-                <ol>
-                    <li><b>API Midtrans</b></li>
-                </ol>
-                <ul>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur repellat illo aliquam, odit rerum sunt, sit quaerat quas doloremque dolorem perferendis alias dolores saepe nihil necessitatibus nulla tempore optio totam.
-                </ul>
+    <section class="main px-8 py-8 min-h-[50vh]">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-black bg-opacity-70 p-6 rounded-lg">
+                <h2 class="text-2xl font-bold">WHAT I LEARN</h2>
+                <div class="content1 mt-4">
+                    <ul class="list-disc list-inside space-y-2">
+                        <li><b>PHP</b></li>
+                        <li><b>Flutter</b></li>
+                    </ul>
+                    <p class="mt-4">
+                        I am currently expanding my skills by learning Dart and improving my knowledge of Flutter
+                        for mobile development. Additionally, I am exploring backend technologies with Laravel
+                        to enhance my expertise in web development.
+                    </p>
+                </div>
+            </div>
 
-                <ol>
-                    <li><b>CRUD with filament</b></li>
-                </ol>
-                <ul>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur repellat illo aliquam, odit rerum sunt, sit quaerat quas doloremque dolorem perferendis alias dolores saepe nihil necessitatibus nulla tempore optio totam. <br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur repellat illo aliquam, odit rerum sunt, sit quaerat quas doloremque dolorem perferendis alias dolores saepe nihil necessitatibus nulla tempore optio totam.
-                </ul>
+            <div class="bg-black bg-opacity-70 p-6 rounded-lg" id="project">
+                <h2 class="text-2xl font-bold">PROJECT</h2>
+                <div class="content1 mt-4">
+                    <ul class="list-disc list-inside space-y-2">
+                        <li><b>API Midtrans</b></li>
+                    </ul>
+                    <p class="mt-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur repellat illo aliquam, odit rerum sunt, sit quaerat quas doloremque dolorem perferendis alias dolores saepe nihil necessitatibus nulla tempore optio totam.
+                    </p>
 
+                    <ul class="list-disc list-inside space-y-2 mt-4">
+                        <li><b>CRUD with Filament</b></li>
+                    </ul>
+                    <p class="mt-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur repellat illo aliquam, odit rerum sunt, sit quaerat quas doloremque dolorem perferendis alias dolores saepe nihil necessitatibus nulla tempore optio totam.
+                    </p>
+                </div>
+            </div>
 
+            <div class="col-span-2 text-center bg-black bg-opacity-70 p-6 rounded-lg">
+                <h2 class="text-2xl font-bold">EVOSSSS</h2>
+                <p>ROARRRRRRR</p>
             </div>
         </div>
     </section>
 
-    <section class="contacs" id="contact" >
-        <div class="skill">
-  
-            <div class="content1">
-                <ol>
-                    <li><a>PHP</b></li>
-                    <li><a>Flutter</b></li>
-                </ol>
-                <ul>
-                    I am currently expanding my skills by learning Dart and improving my knowledge of Flutter <br>
-                    for mobile development. Additionally, I am exploring backend technologies with Laravel <br>
-                    to enhance my expertise in web development.
-                </ul>
-            </div>
+    <footer class="bg-gray-700 text-center py-6">
+        <h2 class="text-xl mb-4">Connect with me !!</h2>
+        <div class="flex justify-center space-x-4">
+            <a href="https://instagram.com/ny.zaru" target="_blank">
+                <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="ny.zaru" class="h-8 w-8">
+            </a>
+            <a href="https://www.linkedin.com/in/nizar-afham-aflaha-80a855246?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="nizar afham aflaha" class="h-8 w-8">
+            </a>
         </div>
-    </section>
-    <footer class="contact">
-        <h2>Connect with me !!</h2>
-        <a href="https://instagram.com/ny.zaru" target="_blank">
-            <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="ny.zaru" height="30" width="40" />
-        </a>
-        <a href="https://www.linkedin.com/in/nizar-afham-aflaha-80a855246?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
-            <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="nizar afham aflaha" height="30" width="40" />
-        </a>
     </footer>
-    
-    <!-- <table border="1">
-        <tr>
-            <th><em>NEW</em></th>
-            <th><i>rawr</i></th>
-            <th><q>Jeans</q></th>
-        </tr>
-        <tr>
-            <td><sub>Minji</sub></td>
-            <td colspan="2"><sup>Hanni</sup></td>
-        </tr>
-        <tr>
-            <td><h4>Nizar</h4></td>
-            <td><h5>Afham</h5></td>
-            <td><h6>Aflaha</h6></td>
-        </tr>
-        <tr>
-            <td rowspan="2"><blockquote>Haerin</blockquote></td>
-            <td><kbd>Hyein</kbd></td>
-            <td><samp>Danielle</samp></td>
-        </tr>
-        <tr>
-            <td><strong>N</strong></td>
-            <td><h3>J</h3></td>
-        </tr>
-    </table> -->
+
 </body>
 </html>
